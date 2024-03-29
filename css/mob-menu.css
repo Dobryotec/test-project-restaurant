@@ -1,0 +1,59 @@
+.mob-menu__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  z-index: 5;
+
+  transition: all 0.5s ease;
+}
+
+.mob-menu__body {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  height: calc(100svh - 40px);
+  width: 100%;
+  border-radius: 25px;
+  background-color: #b82121b9;
+  padding: 24px;
+  z-index: 10;
+  overflow: auto;
+}
+
+.mob-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.mob-menu__item {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mob-menu__item:hover,
+.mob-menu__item:focus {
+  color: #f9e994;
+  transform: scale(1.1);
+}
+
+.mob-menu__close-btn {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.is-hidden {
+  display: none;
+}

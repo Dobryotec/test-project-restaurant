@@ -1,0 +1,43 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./button.css);
+@import url(./main.css);
+@import url(./footer.css);
+@import url(./mob-menu.css);
+@import url(./modal.css);
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1260px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

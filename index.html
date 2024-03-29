@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Приветствуем Вас на сайте ресторана грузинской кухни Dinamo! У нас вы можете насладиться аутентичными блюдами грузинской кухни, приготовленными с любовью и традиционными рецептами."
+    />
+    <meta
+      name="keywords"
+      content="грузинская кухня, ресторан грузинской кухни, грузинские блюда, кавказская кухня, традиционные грузинские блюда"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Noto+Sans:wght@100..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Dinamo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <nav class="nav">
+          <a href="#">
+            <svg class="icon-logo" width="111" height="56">
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="visually-hidden">Dinamo logo</span>
+          </a>
+          <ul
+            class="nav__list-menu menu-list"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+          >
+            <li class="menu-list__item">
+              <a class="nav__link" href="#">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="nav__link" href="#menu">Меню</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="nav__link" href="#contacts">Контакты</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="nav__link" href="#gallery">Галлерея</a>
+            </li>
+          </ul>
+          <ul class="nav__list-contacts">
+            <li class="nav__item">
+              <svg class="icon-phone" width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a class="nav__phone-link" href="tel:+380987654321"
+                >+380 (098) 765 43 21
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__contact-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="icon-instagram" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__contact-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="icon-facebook" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__contact-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="icon-twitter" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+          <svg class="icon-menu" width="20" height="20" id="data-menu-open">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </nav>
+        <div class="header__block-hero hero-block">
+          <h1 class="hero-block__title">
+            Попробуй лучшую
+            <span class="hero-block__title--red">грузинскую</span> кухню.
+          </h1>
+          <p class="hero-block__text">
+            В нашем ресторане Вы найдете лучшие блюда приготвленные по старинным
+            рецептам грузинской кухни. Потрясающий вкус блюд перенесет Вас к
+            атмосферу невероятного Тбилисси не выходя из дома.
+          </p>
+          <a href="#menu" class="hero-block__button"> Перейти к меню </a>
+        </div>
+        <div class="mob-menu__overlay is-hidden" id="data-menu">
+          <div class="mob-menu__body">
+            <svg
+              class="mob-menu__close-btn"
+              width="20"
+              height="20"
+              id="data-menu-close"
+            >
+              <use href="./images/symbol-defs.svg#icon-cross"></use>
+            </svg>
+            <div>
+              <ul class="mob-menu__list">
+                <li class="mob-menu__item">
+                  <a class="menu__link" href="#">Главная</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="menu__link" href="#menu">Меню</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="menu__link" href="#contacts">Контакты</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a class="menu__link" href="#gallery">Галлерея </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="menu" class="menu-section">
+        <div
+          class="menu-section__block-description description-block"
+          data-aos="fade-up-right"
+          data-aos-duration="1000"
+        >
+          <h2 class="description-block__title">Меню</h2>
+          <p class="description-block__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            pretium netus urna hendrerit convallis aliquam consequat turpis.
+          </p>
+        </div>
+        <div
+          class="menu-section__body-card card-body"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/cold-snacks.webp"
+              alt="cold snacks image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Холодные закуски</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/salads.webp"
+              alt="salads image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Салаты</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/bakery.webp"
+              alt="bakery image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Выпечка</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/soups.webp"
+              alt="soups image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Супы</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/grilled-dishes.webp"
+              alt="grilled dishes image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Блюда на мангале</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/hot-dishes.webp"
+              alt="grilled dishes image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Горячие блюда</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+          <div class="card-body__wrapper">
+            <img
+              class="card-body__image"
+              src="./images/sauces.webp"
+              alt="sauces image"
+              width="355"
+              height="300"
+            />
+            <div class="card-body__content">
+              <h3 class="card-body__title">Соусы</h3>
+              <button class="card-body__button" type="button">
+                Открыть меню
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper swiper-menu">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/dishes/cold-snacks.webp"
+                    alt="cold snacks image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Холодные закуски</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/dishes/salads.webp"
+                    alt="salads image"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Салаты</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/gallery/dish-third.webp"
+                    alt="bakery image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Выпечка</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/dishes/soups.webp"
+                    alt="soups image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Супы</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/gallery/dish-seventh.webp"
+                    alt="grilled dishes image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Блюда на мангале</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/gallery/dish-second.webp"
+                    alt="grilled dishes image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Горячие блюда</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-body__wrapper">
+                <div class="card-body__image-wrapper">
+                  <img
+                    class="card-body__image"
+                    src="./images/dishes/sauces.webp"
+                    alt="soups image"
+                    width="288"
+                    height="508"
+                  />
+                </div>
+                <div class="card-body__info">
+                  <h3 class="card-body__title">Соусы</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery-section">
+        <div class="gallery-section__container block-content">
+          <div class="block-content__wrapper-image">
+            <img
+              src="./images/decorative-element.webp"
+              alt="decorative element"
+            />
+          </div>
+          <div
+            class="gallery-section__block-description description-block"
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+          >
+            <h2 class="description-block__title">Галлерея</h2>
+            <p class="description-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              pretium netus urna hendrerit convallis aliquam consequat turpis.
+            </p>
+          </div>
+        </div>
+        <div class="swiper swiper-mob">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-first.webp"
+                width="355"
+                height="265"
+                alt="cold snacks"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-second.webp"
+                width="355"
+                height="265"
+                alt="salads"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-third.webp"
+                width="355"
+                height="265"
+                alt="bakery"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-fourth.webp"
+                width="355"
+                height="265"
+                alt="soups"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-fifth.webp"
+                width="355"
+                height="265"
+                alt="grilled dishes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-sixth.webp"
+                width="355"
+                height="265"
+                alt="hot dishes"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-seventh.webp"
+                width="355"
+                height="265"
+                alt="sauces"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./images/gallery/dish-eighth.webp"
+                width="355"
+                height="265"
+                alt="bakery"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="gallery-images" data-aos="zoom-in" data-aos-duration="1000">
+          <ul class="gallery-images__list"></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div
+          id="contacts"
+          class="footer__section-contacts contacts-section"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="icon-logo__wrapper">
+            <a href="#">
+              <svg class="icon-logo" width="133" height="66">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+              <span class="visually-hidden">Dinamo logo</span>
+            </a>
+          </div>
+          <div class="contacts-section__wrapper">
+            <a class="contacts-section__link" href="tel:+380(98)7654321"
+              >+380 (098) 765 43 21
+            </a>
+            <ul class="contacts-section__list-social social-list">
+              <li>
+                <a
+                  href="#"
+                  class="social-list__contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="icon-telegram" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                  </svg>
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="social-list__contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <img
+                    src="./images/icon-viber.svg"
+                    width="20"
+                    height="20"
+                    alt="icon viber"
+                  />
+                  <span class="visually-hidden">Viber</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="social-list__contact-link"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <img
+                    src="./images/icon-whatsapp.svg"
+                    width="20"
+                    height="20"
+                    alt="icon-whatsapp"
+                  />
+                  <span class="visually-hidden">WhatsApp</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <address class="footer__information-address address-information">
+            <ul class="address-information__list">
+              <li class="address-information__item">
+                <a href="mailto:mail@mal.ua">Email:mail@mal.ua</a>
+              </li>
+              <li class="address-information__item">
+                <a
+                  href="https://maps.app.goo.gl/qhSeqaepiLSaZSh16"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >г.Киев, станция метро “Крещатик”</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__information-confidential confidential-information">
+          <div class="confidential-information__body">
+            <p>Политика конфиденциальности</p>
+            <p>Пользовательское соглашение</p>
+          </div>
+          <p>Динамо.Грузинское бистро.Все права защищены, 2021</p>
+        </div>
+      </div>
+    </footer>
+    <div class="overlay is-hidden" id="data-modal">
+      <div class="modal__container">
+        <div class="modal__images-block">
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-first.webp"
+              alt="dish first"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-second.webp"
+              alt="dish second"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-third.webp"
+              alt="dish third"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-fourth.webp"
+              alt="dish fourth"
+            />
+          </div>
+        </div>
+        <h1 class="modal__title">Холодные закуски</h1>
+        <div class="modal__content">
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+          <div class="modal__block-body body-block">
+            <div class="body-block__header">
+              <h2 class="body-block__title">Сациви из курицы</h2>
+              <p class="body-block__price">390 грн</p>
+            </div>
+            <div class="body-block__info">
+              <p class="body-block__weight">200гр.</p>
+              <p class="body-block__number">КБЖУ: 320/16/27/4</p>
+            </div>
+            <p class="body-block__description">
+              Состав: кур. грудка 100г; орех грец. 60г; вода 20г; шафран 5г;
+              уксус винный 1,5 ст.л.; масло слив. 2ст.л.; соль,перец по вкусу;
+              хмели сунели 1ч.л.;чеснок 5г; лук репчатый 10г.
+            </p>
+          </div>
+        </div>
+        <div class="modal__images-block">
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-fifth.webp"
+              alt="dish fifth"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-sixth.webp"
+              alt="dish sixth"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-seventh.webp"
+              alt="dish seventh"
+            />
+          </div>
+          <div class="modal__wrapper-image">
+            <img
+              class="modal__image"
+              src="./images/modal/dish-eighth.webp"
+              alt="dish eighth"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script type="module" src="./js/swiper-mob.js"></script>
+    <script type="module" src="./js/swiper-menu.js"></script>
+    <script type="module" src="./js/gallery.js"></script>
+    <script type="module" src="./js/burger-menu.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="./js/aos.js"></script>
+  </body>
+</html>
